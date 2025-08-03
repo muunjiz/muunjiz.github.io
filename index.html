@@ -6,120 +6,156 @@
   <meta name="description" content="منجز للدعاية والإعلان - نُطلق أعمالك نحو النجاح عبر حملات Google Ads الاحترافية المصممة لتحقيق نتائج فعلية.">
   <title>منجز للدعاية والإعلان</title>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <style>
+    :root {
+      --main-color: #6f42c1; /* اللون الأساسي الآن نفس لون الزر */
+      --accent-color: #6f42c1; /* الآن البانر أيضاً بنفس اللون */
+      --bg-light: #f5f7fa;
+      --text-color: #1f1f1f;
+      --radius: 20px;
+    }
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'Cairo', sans-serif;
-      background-color: #f1f3f5;
-      color: #222;
       margin: 0;
-      padding: 0;
+      background-color: var(--bg-light);
+      color: var(--text-color);
     }
     header {
-      background: linear-gradient(90deg, #0056b3, #007bff);
+      background: linear-gradient(to left, var(--main-color), var(--accent-color));
       color: white;
-      padding: 30px 20px;
       text-align: center;
+      padding: 60px 20px;
+      position: relative;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      bottom: -30px;
+      left: 0;
+      width: 100%;
+      height: 60px;
+      background: var(--bg-light);
+      border-radius: 60% 60% 0 0;
     }
     header h1 {
+      font-size: 3em;
       margin: 0;
-      font-size: 2.5em;
+      letter-spacing: 1px;
     }
     header p {
       margin-top: 10px;
       font-size: 1.2em;
+      opacity: 0.95;
     }
     section.hero {
-      padding: 60px 20px;
-      text-align: center;
       background: white;
+      padding: 100px 20px 60px;
+      text-align: center;
     }
     .hero h2 {
-      font-size: 2.2em;
+      font-size: 2.5em;
+      color: var(--main-color);
       margin-bottom: 15px;
-      color: #007bff;
     }
     .hero p {
-      font-size: 1.3em;
-      max-width: 700px;
+      max-width: 750px;
       margin: 0 auto;
+      font-size: 1.2em;
+    }
+    a.button {
+      margin-top: 30px;
+      display: inline-block;
+      background: var(--main-color);
+      color: white;
+      text-decoration: none;
+      padding: 14px 30px;
+      border-radius: var(--radius);
+      font-size: 1.1em;
+      transition: all 0.3s ease;
+    }
+    a.button:hover {
+      background: #4e2a94;
+      transform: translateY(-2px);
     }
     section.services {
-      padding: 60px 20px;
-      background-color: #f8f9fa;
+      background: var(--bg-light);
+      padding: 80px 20px;
+      text-align: center;
     }
     .services h2 {
-      text-align: center;
-      font-size: 2em;
+      font-size: 2.2em;
+      color: var(--main-color);
       margin-bottom: 40px;
-      color: #0056b3;
     }
     .service {
       background: white;
-      border-radius: 16px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-      padding: 25px;
-      margin-bottom: 30px;
-      max-width: 800px;
-      margin-inline: auto;
+      border-radius: var(--radius);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+      padding: 30px;
+      margin: 20px auto;
+      max-width: 850px;
+      transition: transform 0.3s;
+    }
+    .service:hover {
+      transform: translateY(-5px);
     }
     .service h3 {
-      color: #007bff;
+      color: var(--main-color);
       margin-bottom: 10px;
     }
-    footer {
-      background: #212529;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.95em;
-    }
-    a.button {
-      display: inline-block;
-      padding: 12px 25px;
-      margin-top: 25px;
-      background-color: #007bff;
-      color: white;
-      text-decoration: none;
-      border-radius: 10px;
+    .service p {
       font-size: 1.1em;
-      transition: background-color 0.3s ease;
     }
-    a.button:hover {
-      background-color: #0056b3;
+    footer {
+      background: #1c1e21;
+      color: #eee;
+      text-align: center;
+      padding: 30px 20px;
+      font-size: 1em;
+    }
+    footer a {
+      color: #0dcaf0;
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>منجز للدعاية والإعلان</h1>
-    <p>نحو نتائج ملموسة في عالم الإعلانات الرقمية</p>
+    <p>نحو نتائج ملموسة وتميّز بصري يرسّخ علامتك في أذهان عملائك</p>
   </header>
 
   <section class="hero">
-    <h2>ضاعف مبيعاتك مع Google Ads</h2>
-    <p>نحن في "منجز" نُصمم وندير حملات دعائية باحترافية عالية لجذب العملاء الذين يبحثون عنك فعلاً. لا تضيّع ميزانيتك على إعلانات عشوائية، دعنا نحول كل ريال تستثمره إلى نتائج واضحة ومبيعات فعلية.</p>
+    <h2>اصنع تأثيرًا... مع منجز</h2>
+    <p>في عالم مزدحم بالإعلانات، نُقدّم لك تجربة فريدة لإدارة حملات Google باحترافية. نساعدك على الوصول للجمهور المهتم، وجعل كل ريال يُصرف يحقق لك مردود فعلي واضح.</p>
     <a href="https://wa.me/966000000000" class="button">ابدأ الآن</a>
   </section>
 
   <section class="services">
-    <h2>خدماتنا</h2>
+    <h2>خدماتنا الإبداعية</h2>
     <div class="service">
-      <h3>إدارة حملات Google</h3>
-      <p>ننشئ ونستهدف ونحسن حملاتك بدقة لعرض إعلاناتك على الأشخاص المهتمين فعليًا بما تقدمه، وبأقل تكلفة ممكنة.</p>
+      <h3>حملات Google مدروسة</h3>
+      <p>نصمّم لك حملات إعلانية ذكية تستهدف الجمهور المناسب، بأعلى كفاءة وأفضل نتائج.</p>
     </div>
     <div class="service">
-      <h3>تحليل وتحسين الأداء</h3>
-      <p>نقدم لك تقارير شفافة ومفصلة عن أداء الحملات مع اقتراحات تحسين مستمرة لضمان أعلى عائد على الاستثمار.</p>
+      <h3>تحليل شامل للأداء</h3>
+      <p>نُقدّم تقارير تفصيلية مع تحليل البيانات لتحسين كل حملة بشكل مستمر.</p>
     </div>
     <div class="service">
-      <h3>تصميم إعلانات جذابة وفعالة</h3>
-      <p>نبتكر إعلانات بصريًا مقنعة ونصوص تسويقية مؤثرة لتزيد من معدل النقرات والتحويلات.</p>
+      <h3>هوية بصرية وإعلانات جذابة</h3>
+      <p>نصمّم لك إعلانات تتكلم بلغة علامتك التجارية، تلفت الانتباه وتدفع نحو التفاعل.</p>
     </div>
   </section>
 
   <footer>
     &copy; 2025 منجز للدعاية والإعلان - جميع الحقوق محفوظة<br>
-    تواصل معنا عبر <a href="https://wa.me/966000000000" style="color:#17a2b8; text-decoration:underline">واتساب</a> أو تابعنا على وسائل التواصل.
+    تواصل معنا عبر <a href="https://wa.me/966000000000">واتساب</a> أو تابعنا على منصات التواصل.
   </footer>
 </body>
 </html>
