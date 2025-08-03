@@ -1,449 +1,792 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="منجز للدعاية والإعلان - نُطلق أعمالك نحو النجاح عبر حملات Google Ads الاحترافية المصممة لتحقيق نتائج فعلية.">
-  <meta name="keywords" content="دعاية, إعلان, Google Ads, تسويق إلكتروني, حملات إعلانية">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="منجز - وكالة متخصصة في إدارة حملات Google الإعلانية، تصميم الإعلانات الرقمية وتحليل الأداء لتحقيق أفضل النتائج لعملك">
+  <meta name="keywords" content="حملات جوجل, إعلانات رقمية, تسويق إلكتروني, إدارة حملات إعلانية, تحسين أداء الإعلانات, تسويق رقمي السعودية">
   <meta name="author" content="منجز للدعاية والإعلان">
-  <title>منجز للدعاية والإعلان | حملات إعلانية ذكية</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="منجز | وكالة متخصصة في الحملات الإعلانية الرقمية">
+  <meta property="og:description" content="إدارة احترافية لحملات Google الإعلانية مع تحليل أداء دقيق لتحقيق أفضل النتائج">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://munjiz.com">
+  <meta property="og:image" content="https://munjiz.com/images/og-image.jpg">
+  <meta property="og:locale" content="ar_SA">
+  
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="منجز | وكالة متخصصة في الحملات الإعلانية الرقمية">
+  <meta name="twitter:description" content="إدارة احترافية لحملات Google الإعلانية مع تحليل أداء دقيق لتحقيق أفضل النتائج">
+  <meta name="twitter:image" content="https://munjiz.com/images/og-image.jpg">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://munjiz.com">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  <!-- Preload important resources -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" as="style">
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+  
+  <!-- Preconnect to external domains -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  
+  <title>منجز للدعاية والإعلان | إدارة حملات Google الإعلانية باحترافية</title>
+  
+  <!-- Structured Data / Schema Markup -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "منجز للدعاية والإعلان",
+      "image": "https://munjiz.com/images/logo.jpg",
+      "@id": "https://munjiz.com",
+      "url": "https://munjiz.com",
+      "telephone": "+966501234567",
+      "email": "info@munjiz.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "شارع الملك فهد",
+        "addressLocality": "الرياض",
+        "addressRegion": "الرياض",
+        "postalCode": "12345",
+        "addressCountry": "SA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 24.7136,
+        "longitude": 46.6753
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Saturday",
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday"
+        ],
+        "opens": "09:00",
+        "closes": "17:00"
+      },
+      "priceRange": "$$",
+      "sameAs": [
+        "https://twitter.com/munjiz",
+        "https://instagram.com/munjiz",
+        "https://linkedin.com/company/munjiz"
+      ]
+    }
+  </script>
+
   <style>
     :root {
-      --main-color: #6f42c1;
-      --accent-color: #5a32a8;
-      --bg-light: #f5f7fa;
-      --text-color: #1f1f1f;
-      --radius: 20px;
-      --box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      --primary: #6f42c1;
+      --primary-light: #8a63d2;
+      --primary-dark: #5a32a8;
+      --whatsapp: #25D366;
+      --light: #f8f9fa;
+      --lighter: #fefefe;
+      --dark: #1a1c20;
+      --text: #333;
+      --text-light: #666;
+      --radius: 12px;
+      --shadow: 0 4px 12px rgba(0,0,0,0.08);
     }
+    
     * {
       box-sizing: border-box;
-      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
     }
+    
     body {
       font-family: 'Cairo', sans-serif;
-      margin: 0;
-      background-color: var(--bg-light);
-      color: var(--text-color);
+      color: var(--text);
       line-height: 1.6;
+      background-color: var(--light);
     }
-    header {
-      background: linear-gradient(to left, var(--main-color), var(--accent-color));
+    
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, var(--primary), var(--primary-dark));
       color: white;
+      padding: 100px 0 80px;
       text-align: center;
-      padding: 80px 20px 100px;
       position: relative;
       overflow: hidden;
     }
-    header::after {
+    
+    .hero::before {
       content: '';
       position: absolute;
-      bottom: -30px;
-      left: 0;
-      width: 100%;
-      height: 60px;
-      background: var(--bg-light);
-      border-radius: 60% 60% 0 0;
-      z-index: 1;
+      top: -50px;
+      right: -50px;
+      width: 200px;
+      height: 200px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
     }
-    .logo-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 15px;
-      margin-bottom: 20px;
+    
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -80px;
+      left: -30px;
+      width: 300px;
+      height: 300px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
     }
+    
     .logo {
-      width: 60px;
-      height: 60px;
-      background-color: white;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+    }
+    
+    .logo-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--lighter);
+      color: var(--primary);
       border-radius: 50%;
       display: flex;
       align-items: center;
       justify-content: center;
       font-weight: bold;
-      font-size: 1.5em;
-      color: var(--main-color);
+      box-shadow: var(--shadow);
     }
-    header h1 {
-      font-size: 2.8em;
-      margin: 0;
-      letter-spacing: 0.5px;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    header p {
-      margin-top: 15px;
-      font-size: 1.2em;
-      opacity: 0.95;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    section {
-      padding: 80px 20px;
-    }
-    .hero {
-      background: white;
-      text-align: center;
-      padding-top: 100px;
-      position: relative;
-      z-index: 2;
-    }
-    .hero h2 {
-      font-size: 2.5em;
-      color: var(--main-color);
+    
+    .hero h1 {
+      font-size: 2.2rem;
       margin-bottom: 20px;
+      position: relative;
+      z-index: 1;
     }
+    
     .hero p {
-      max-width: 750px;
-      margin: 0 auto;
-      font-size: 1.2em;
-      color: #444;
-    }
-    .trust-box {
-      margin-top: 30px;
+      font-size: 1.1rem;
       max-width: 700px;
-      background: #e0e7ff;
-      padding: 25px;
-      border-radius: var(--radius);
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 1.05em;
-      line-height: 1.8;
-      color: #333;
-      box-shadow: var(--box-shadow);
-      border: 1px solid rgba(111, 66, 193, 0.2);
+      margin: 0 auto 30px;
+      position: relative;
+      z-index: 1;
+      color: rgba(255,255,255,0.9);
     }
-    .trust-box strong {
-      color: var(--main-color);
-      font-weight: 700;
-    }
-    a.button {
+    
+    .contact-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
       margin-top: 30px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .btn {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      background: var(--main-color);
-      color: white;
-      text-decoration: none;
-      padding: 16px 35px;
+      padding: 14px 28px;
       border-radius: var(--radius);
-      font-size: 1.1em;
+      text-decoration: none;
       font-weight: 600;
       transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(111, 66, 193, 0.3);
     }
-    a.button:hover {
-      background: var(--accent-color);
+    
+    .btn-primary {
+      background: var(--lighter);
+      color: var(--primary);
+      box-shadow: var(--shadow);
+    }
+    
+    .btn-primary:hover {
       transform: translateY(-3px);
-      box-shadow: 0 6px 20px rgba(111, 66, 193, 0.4);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
+    
+    .btn-whatsapp {
+      background: var(--whatsapp);
+      color: white;
+      box-shadow: var(--shadow);
+    }
+    
+    .btn-whatsapp:hover {
+      transform: translateY(-3px);
+      background: #1fba57;
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+    }
+    
+    /* Services */
     .services {
-      background: var(--bg-light);
-      text-align: center;
+      padding: 80px 0;
     }
+    
     .section-title {
-      font-size: 2.2em;
-      color: var(--main-color);
-      margin-bottom: 50px;
-      position: relative;
-      display: inline-block;
-    }
-    .section-title::after {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      right: 0;
-      width: 50%;
-      height: 3px;
-      background: var(--main-color);
-      border-radius: 3px;
-    }
-    .service {
-      background: white;
-      border-radius: var(--radius);
-      box-shadow: var(--box-shadow);
-      padding: 35px;
-      margin: 25px auto;
-      max-width: 850px;
-      transition: transform 0.3s, box-shadow 0.3s;
-      text-align: right;
-      border: 1px solid rgba(0, 0, 0, 0.05);
-    }
-    .service:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
-    }
-    .service h3 {
-      color: var(--main-color);
-      margin-bottom: 15px;
-      font-size: 1.5em;
-    }
-    .service p {
-      font-size: 1.1em;
-      color: #555;
-      margin-bottom: 0;
-    }
-    .testimonials {
-      background: white;
       text-align: center;
+      margin-bottom: 50px;
     }
-    .testimonial {
-      background: var(--bg-light);
-      padding: 30px;
-      border-radius: var(--radius);
+    
+    .section-title h2 {
+      font-size: 1.8rem;
+      color: var(--primary);
+      margin-bottom: 15px;
+    }
+    
+    .section-title p {
+      color: var(--text-light);
       max-width: 700px;
       margin: 0 auto;
-      box-shadow: var(--box-shadow);
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+    
+    .service-card {
+      background: var(--lighter);
+      border-radius: var(--radius);
+      padding: 30px;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+    }
+    
+    .service-icon {
+      width: 70px;
+      height: 70px;
+      background: rgba(111, 66, 193, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      color: var(--primary);
+      font-size: 1.8rem;
+    }
+    
+    .service-card h3 {
+      margin-bottom: 15px;
+      font-size: 1.3rem;
+      color: var(--primary);
+    }
+    
+    .service-card p {
+      color: var(--text-light);
+    }
+    
+    /* Portfolio */
+    .portfolio {
+      padding: 80px 0;
+      background: var(--lighter);
+    }
+    
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 25px;
+    }
+    
+    .portfolio-item {
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow);
+      transition: all 0.3s ease;
+      background: white;
+    }
+    
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    
+    .portfolio-img {
+      height: 200px;
+      overflow: hidden;
+    }
+    
+    .portfolio-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    .portfolio-item:hover .portfolio-img img {
+      transform: scale(1.05);
+    }
+    
+    .portfolio-info {
+      padding: 20px;
+    }
+    
+    .portfolio-info h3 {
+      margin-bottom: 8px;
+      color: var(--primary);
+    }
+    
+    .portfolio-info p {
+      color: var(--text-light);
+      font-size: 0.9rem;
+    }
+    
+    /* Contact */
+    .contact {
+      padding: 80px 0;
+    }
+    
+    .contact-container {
+      background: var(--primary);
+      border-radius: var(--radius);
+      padding: 50px;
+      color: white;
+      text-align: center;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .contact-container::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 200px;
+      height: 200px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+    }
+    
+    .contact-container h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
       position: relative;
     }
-    .testimonial::before {
+    
+    .contact-container p {
+      margin-bottom: 30px;
+      opacity: 0.9;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      position: relative;
+    }
+    
+    /* Testimonials */
+    .testimonials {
+      padding: 80px 0;
+    }
+    
+    .testimonial-card {
+      background: var(--lighter);
+      border-radius: var(--radius);
+      padding: 40px;
+      box-shadow: var(--shadow);
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+    }
+    
+    .testimonial-card::before {
       content: '"';
       position: absolute;
-      top: 10px;
-      right: 20px;
-      font-size: 4em;
+      top: 20px;
+      right: 30px;
+      font-size: 5rem;
       color: rgba(111, 66, 193, 0.1);
       font-family: serif;
+      line-height: 1;
     }
-    .testimonial p {
-      font-size: 1.2em;
-      font-style: italic;
-      color: #333;
-      margin-bottom: 20px;
+    
+    .testimonial-text {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      margin-bottom: 25px;
+      position: relative;
     }
-    .testimonial span {
-      display: block;
-      font-weight: bold;
-      color: var(--main-color);
-    }
-    .stats {
+    
+    .testimonial-author {
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-      margin-top: 40px;
+      align-items: center;
+      gap: 15px;
     }
-    .stat-item {
-      background: white;
-      padding: 25px;
-      border-radius: var(--radius);
-      min-width: 200px;
-      box-shadow: var(--box-shadow);
+    
+    .author-img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
     }
-    .stat-number {
-      font-size: 2.5em;
-      font-weight: bold;
-      color: var(--main-color);
+    
+    .author-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .author-info h4 {
       margin-bottom: 5px;
     }
-    .stat-label {
-      color: #666;
-      font-size: 0.9em;
+    
+    .author-info p {
+      color: var(--text-light);
+      font-size: 0.9rem;
     }
+    
+    /* Footer */
     footer {
-      background: #1c1e21;
-      color: #eee;
-      text-align: center;
-      padding: 40px 20px;
-      font-size: 1em;
-    }
-    footer a {
-      color: #0dcaf0;
-      text-decoration: none;
-      transition: color 0.3s;
-    }
-    footer a:hover {
-      color: #00b4d8;
-      text-decoration: underline;
-    }
-    .contact-form {
-      max-width: 600px;
-      margin: 0 auto;
-      background: white;
-      padding: 30px;
-      border-radius: var(--radius);
-      box-shadow: var(--box-shadow);
-      text-align: right;
-    }
-    .form-group {
-      margin-bottom: 20px;
-    }
-    .form-group label {
-      display: block;
-      margin-bottom: 8px;
-      font-weight: 600;
-      color: #444;
-    }
-    .form-group input,
-    .form-group textarea {
-      width: 100%;
-      padding: 12px 15px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      font-family: 'Cairo', sans-serif;
-      font-size: 1em;
-      transition: border 0.3s;
-    }
-    .form-group input:focus,
-    .form-group textarea:focus {
-      border-color: var(--main-color);
-      outline: none;
-    }
-    .form-submit {
-      background: var(--main-color);
+      background: var(--dark);
       color: white;
-      border: none;
-      padding: 14px 30px;
-      border-radius: var(--radius);
-      font-size: 1.1em;
-      cursor: pointer;
-      transition: background 0.3s;
-      font-family: 'Cairo', sans-serif;
+      padding: 60px 0 30px;
+      text-align: center;
     }
-    .form-submit:hover {
-      background: var(--accent-color);
+    
+    .footer-logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      display: inline-block;
     }
+    
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin: 25px 0;
+      flex-wrap: wrap;
+    }
+    
+    .footer-links a {
+      color: rgba(255,255,255,0.8);
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    
+    .footer-links a:hover {
+      color: white;
+    }
+    
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 25px 0;
+    }
+    
+    .social-link {
+      width: 45px;
+      height: 45px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.2rem;
+      transition: 0.3s;
+    }
+    
+    .social-link:hover {
+      background: var(--primary);
+      transform: translateY(-3px);
+    }
+    
+    .footer-bottom {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.7);
+      font-size: 0.9rem;
+    }
+    
+    /* Responsive */
     @media (max-width: 768px) {
-      header {
-        padding: 60px 20px 80px;
+      .hero {
+        padding: 80px 0 60px;
       }
-      header h1 {
-        font-size: 2em;
+      
+      .hero h1 {
+        font-size: 1.8rem;
       }
-      .hero h2, .section-title {
-        font-size: 1.8em;
+      
+      .contact-buttons {
+        flex-direction: column;
+        align-items: center;
       }
-      .service {
-        padding: 25px;
+      
+      .btn {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
       }
-      .stat-item {
-        min-width: 150px;
-        padding: 20px;
+      
+      .contact-container {
+        padding: 40px 20px;
       }
-      .stat-number {
-        font-size: 2em;
+      
+      .services-grid, .portfolio-grid {
+        grid-template-columns: 1fr;
       }
     }
   </style>
+  
+  <!-- CSS الخارجي مع وسمة media لتحسين الأداء -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" media="print" onload="this.media='all'">
+  
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  </noscript>
 </head>
 <body>
-  <header>
-    <div class="logo-container">
-      <div class="logo">م</div>
-      <h1>منجز للدعاية والإعلان</h1>
+  <!-- Hero Section -->
+  <header class="hero" role="banner">
+    <div class="container">
+      <div class="logo" aria-label="منجز للدعاية والإعلان">
+        <span class="logo-icon" aria-hidden="true">م</span>
+        <span>منجز</span>
+      </div>
+      <h1>حملات إعلانية ذكية تحقق نتائج ملموسة</h1>
+      <p>نقدم حلولاً إعلانية مبتكرة تعتمد على البيانات لتحقيق أفضل عائد على استثمارك</p>
+      
+      <div class="contact-buttons">
+        <a href="https://wa.me/966501234567" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="تواصل عبر واتساب">
+          <i class="fab fa-whatsapp" aria-hidden="true"></i>
+          تواصل عبر واتساب
+        </a>
+        <a href="tel:+966501234567" class="btn btn-primary" aria-label="اتصل بنا الآن">
+          <i class="fas fa-phone-alt" aria-hidden="true"></i>
+          اتصل بنا الآن
+        </a>
+      </div>
     </div>
-    <p>نحو نتائج ملموسة وتميّز بصري يرسّخ علامتك في أذهان عملائك</p>
   </header>
 
-  <section class="hero">
-    <h2>اصنع تأثيرًا... مع منجز</h2>
-    <p>في عالم مزدحم بالإعلانات، نُقدّم لك تجربة فريدة لإدارة حملات Google باحترافية. نساعدك على الوصول للجمهور المهتم، وجعل كل ريال يُصرف يحقق لك مردود فعلي واضح.</p>
-
-    <div class="trust-box">
-      <strong>ثقة وأمان:</strong> موقع منجز يعمل بشفافية كاملة، ولا يتم البدء بأي حملة إعلانية إلا بعد الاتفاق الكامل معك. نحن نلتزم بالعقود والخطوات الرسمية لضمان حقوقك. الدفع يتم عبر وسائل آمنة ومعروفة، ولدينا سجل عملاء يشهد بجديتنا ونتائجنا.
-    </div>
-
-    <a href="https://wa.me/966000000000" class="button">
-      <span>ابدأ الآن</span>
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </a>
-
-    <div class="stats">
-      <div class="stat-item">
-        <div class="stat-number">+150</div>
-        <div class="stat-label">عميل راضٍ</div>
+  <!-- Services Section -->
+  <section class="services" role="region" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="services-heading">خدماتنا الاحترافية</h2>
+        <p>حلول تسويقية مصممة خصيصاً لتحقيق أهداف عملك</p>
       </div>
-      <div class="stat-item">
-        <div class="stat-number">40%</div>
-        <div class="stat-label">متوسط زيادة المبيعات</div>
+      
+      <div class="services-grid">
+        <div class="service-card" itemscope itemtype="https://schema.org/Service">
+          <div class="service-icon">
+            <i class="fas fa-bullseye" aria-hidden="true"></i>
+          </div>
+          <h3 itemprop="name">حملات جوجل الإعلانية</h3>
+          <p itemprop="description">تصميم وإدارة حملات إعلانية دقيقة تستهدف الجمهور المناسب بأفضل تكلفة</p>
+        </div>
+        
+        <div class="service-card" itemscope itemtype="https://schema.org/Service">
+          <div class="service-icon">
+            <i class="fas fa-chart-line" aria-hidden="true"></i>
+          </div>
+          <h3 itemprop="name">تحليل وتقارير</h3>
+          <p itemprop="description">متابعة دقيقة وتحليل مفصل لأداء الحملات لضمان تحقيق الأهداف</p>
+        </div>
+        
+        <div class="service-card" itemscope itemtype="https://schema.org/Service">
+          <div class="service-icon">
+            <i class="fas fa-ad" aria-hidden="true"></i>
+          </div>
+          <h3 itemprop="name">تصميم إعلانات</h3>
+          <p itemprop="description">تصاميم إبداعية جذابة تلفت الانتباه وتحقق أعلى معدلات التفاعل</p>
+        </div>
       </div>
-      <div class="stat-item">
-        <div class="stat-number">24/7</div>
-        <div class="stat-label">دعم فني</div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="portfolio" role="region" aria-labelledby="portfolio-heading">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="portfolio-heading">أعمالنا الأخيرة</h2>
+        <p>بعض النتائج التي حققناها لعملائنا</p>
+      </div>
+      
+      <div class="portfolio-grid">
+        <div class="portfolio-item" itemscope itemtype="https://schema.org/CreativeWork">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="حملة إعلانية لمتجر إلكتروني" loading="lazy" width="600" height="400" itemprop="image">
+          </div>
+          <div class="portfolio-info">
+            <h3 itemprop="name">متجر إلكتروني</h3>
+            <p itemprop="description">زيادة المبيعات بنسبة 140% خلال شهرين</p>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" itemscope itemtype="https://schema.org/CreativeWork">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="حملة إعلانية لمنصة تعليمية" loading="lazy" width="600" height="400" itemprop="image">
+          </div>
+          <div class="portfolio-info">
+            <h3 itemprop="name">منصة تعليمية</h3>
+            <p itemprop="description">زيادة التحويلات بنسبة 85% مع تقليل التكلفة</p>
+          </div>
+        </div>
+        
+        <div class="portfolio-item" itemscope itemtype="https://schema.org/CreativeWork">
+          <div class="portfolio-img">
+            <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="حملة إعلانية لتطبيق جوال" loading="lazy" width="600" height="400" itemprop="image">
+          </div>
+          <div class="portfolio-info">
+            <h3 itemprop="name">تطبيق جوال</h3>
+            <p itemprop="description">زيادة التنزيلات بنسبة 200% خلال 3 أشهر</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section class="services">
-    <h2 class="section-title">خدماتنا الإبداعية</h2>
-    <div class="service">
-      <h3>حملات Google مدروسة</h3>
-      <p>نصمّم لك حملات إعلانية ذكية تستهدف الجمهور المناسب، بأعلى كفاءة وأفضل نتائج. نستخدم أحدث أدوات التحليل والتتبع لضمان تحقيق أهدافك التسويقية.</p>
-    </div>
-    <div class="service">
-      <h3>تحليل شامل للأداء</h3>
-      <p>نُقدّم تقارير تفصيلية مع تحليل البيانات لتحسين كل حملة بشكل مستمر. نوفر لك رؤى واضحة عن أداء إعلاناتك ونقاط القوة والضعف.</p>
-    </div>
-    <div class="service">
-      <h3>هوية بصرية وإعلانات جذابة</h3>
-      <p>نصمّم لك إعلانات تتكلم بلغة علامتك التجارية، تلفت الانتباه وتدفع نحو التفاعل. نبتكر تصاميم احترافية تعكس هويتك وتجذب عملائك المستهدفين.</p>
+  <!-- Testimonials Section -->
+  <section class="testimonials" role="region" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="section-title">
+        <h2 id="testimonials-heading">آراء عملائنا</h2>
+        <p>انطباعات العملاء الذين استفادوا من خدماتنا</p>
+      </div>
+      
+      <div class="testimonial-card" itemscope itemtype="https://schema.org/Review">
+        <div class="testimonial-text" itemprop="reviewBody">
+          "بعد التعامل مع فريق منجز، شهدنا تحولاً جذرياً في أداء حملاتنا الإعلانية. زادت مبيعاتنا بنسبة 60% مع تقليل في تكلفة الحصول على العميل بنسبة 30%. الفريق محترف جداً ويقدم تقارير مفصلة تساعدنا على فهم أداء الحملات."
+        </div>
+        <div class="testimonial-author">
+          <div class="author-img">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="صورة محمد العلي" loading="lazy" width="60" height="60">
+          </div>
+          <div class="author-info">
+            <h4 itemprop="author">محمد العلي</h4>
+            <p itemprop="itemReviewed">مدير تسويق - متجر إلكتروني</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="testimonials">
-    <h2 class="section-title">آراء عملائنا</h2>
-    <div class="testimonial">
-      <p>زادت مبيعاتنا بنسبة 40% بعد التعامل مع منجز، فريق محترف يقدم نتائج ملموسة ويتبع أحدث استراتيجيات التسويق الرقمي.</p>
-      <span>- محمد أحمد، متجر إلكتروني</span>
-    </div>
-    <div class="testimonial" style="margin-top: 30px;">
-      <p>الشفافية والمتابعة الدقيقة كانتا أهم ما يميز تعاملنا مع منجز، استطعنا تقليل تكلفة الحملات مع زيادة التحويلات بشكل ملحوظ.</p>
-      <span>- نورا السليم، مركز تعليمي</span>
-    </div>
-  </section>
-
-  <section class="contact">
-    <h2 class="section-title">تواصل معنا</h2>
-    <div class="contact-form">
-      <form>
-        <div class="form-group">
-          <label for="name">الاسم الكامل</label>
-          <input type="text" id="name" required>
+  <!-- Contact Section -->
+  <section class="contact" role="region" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="contact-container" itemscope itemtype="https://schema.org/ContactPoint">
+        <h2 id="contact-heading">جاهزون لبدء مشروعك؟</h2>
+        <p itemprop="description">تواصل معنا اليوم لمعرفة كيف يمكننا مساعدتك في تحقيق أهدافك التسويقية</p>
+        
+        <div class="contact-buttons">
+          <a href="https://wa.me/966501234567" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="محادثة واتساب" itemprop="url">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            محادثة واتساب
+          </a>
+          <a href="tel:+966501234567" class="btn" style="background: white; color: var(--primary);" aria-label="اتصل الآن" itemprop="telephone">
+            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+            اتصل الآن
+          </a>
         </div>
-        <div class="form-group">
-          <label for="email">البريد الإلكتروني</label>
-          <input type="email" id="email" required>
-        </div>
-        <div class="form-group">
-          <label for="phone">رقم الهاتف</label>
-          <input type="tel" id="phone">
-        </div>
-        <div class="form-group">
-          <label for="message">الرسالة</label>
-          <textarea id="message" rows="5" required></textarea>
-        </div>
-        <button type="submit" class="form-submit">إرسال الرسالة</button>
-      </form>
+      </div>
     </div>
   </section>
 
-  <footer>
-    <div style="margin-bottom: 20px;">
-      <a href="https://wa.me/966000000000" style="margin: 0 10px;">واتساب</a> | 
-      <a href="tel:+966000000000" style="margin: 0 10px;">اتصال</a> | 
-      <a href="mailto:info@example.com" style="margin: 0 10px;">البريد الإلكتروني</a>
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-logo" itemprop="name">منجز</div>
+      
+      <div class="footer-links">
+        <a href="#services" aria-label="خدماتنا">خدماتنا</a>
+        <a href="#portfolio" aria-label="أعمالنا">أعمالنا</a>
+        <a href="tel:+966501234567" aria-label="اتصل بنا">اتصل بنا</a>
+        <a href="https://wa.me/966501234567" target="_blank" rel="noopener noreferrer" aria-label="واتساب">واتساب</a>
+      </div>
+      
+      <div class="social-links">
+        <a href="#" class="social-link" aria-label="تويتر">
+          <i class="fab fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="social-link" aria-label="إنستغرام">
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="#" class="social-link" aria-label="لينكدإن">
+          <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+        </a>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span itemprop="copyrightYear">2023</span> <span itemprop="copyrightHolder">منجز للدعاية والإعلان</span>. جميع الحقوق محفوظة</p>
+      </div>
     </div>
-    &copy; 2025 منجز للدعاية والإعلان - جميع الحقوق محفوظة<br>
-    <small>تصميم وتطوير بمعايير احترافية</small>
   </footer>
 
-  <script>
-    // يمكن إضافة كود جافاسكريبت هنا للتفاعلية
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
+  <!-- JavaScript غير الحرج مع defer -->
+  <script defer>
+    // تحسينات تجربة المستخدم والأداء
+    document.addEventListener('DOMContentLoaded', function() {
+      // تحميل الصور الكسولة
+      if ('loading' in HTMLImageElement.prototype) {
+        const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+        lazyImages.forEach(img => {
+          if (img.dataset.src) {
+            img.src = img.dataset.src;
+          }
+        });
+      }
+      
+      // تتبع الأحداث المهمة
+      document.querySelectorAll('a[href^="tel:"], a[href^="https://wa.me/"]').forEach(link => {
+        link.addEventListener('click', function() {
+          if (typeof gtag !== 'undefined') {
+            gtag('event', 'click', {
+              'event_category': 'Contact',
+              'event_label': this.href.includes('tel:') ? 'Phone Call' : 'WhatsApp'
+            });
+          }
         });
       });
     });
+    
+    // خدمة Worker لتخزين الذاكرة المؤقتة
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/sw.js').then(function(registration) {
+          console.log('ServiceWorker registration successful');
+        }, function(err) {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }
+  </script>
+  
+  <!-- نسيج لتحميل Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
   </script>
 </body>
 </html>
